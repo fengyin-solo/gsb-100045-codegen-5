@@ -5,6 +5,8 @@ const Shipment = () => import('@/views/shipment/index.vue')
 const TempMonitor = () => import('@/views/temp_monitor/index.vue')
 const Vehicle = () => import('@/views/vehicle/index.vue')
 const Driver = () => import('@/views/driver/index.vue')
+const DriverDetail = () => import('@/views/driver/detail.vue')
+const Dispatch = () => import('@/views/dispatch/index.vue')
 const ColdStorage = () => import('@/views/cold_storage/index.vue')
 const Loading = () => import('@/views/loading/index.vue')
 const Alert = () => import('@/views/alert/index.vue')
@@ -28,6 +30,8 @@ const router = createRouter({
     { path: '/temp_monitor', name: 'temp_monitor', component: TempMonitor },
     { path: '/vehicle', name: 'vehicle', component: Vehicle },
     { path: '/driver', name: 'driver', component: Driver },
+    { path: '/driver/:id', name: 'driver-detail', component: DriverDetail },
+    { path: '/dispatch', name: 'dispatch', component: Dispatch },
     { path: '/cold_storage', name: 'cold_storage', component: ColdStorage },
     { path: '/loading', name: 'loading', component: Loading },
     { path: '/alert', name: 'alert', component: Alert },
